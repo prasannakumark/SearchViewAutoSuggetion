@@ -52,9 +52,9 @@ public class SearviewActivity extends AppCompatActivity implements SearchView.On
 
     //query hint string to be displayed in the empty query field.
     //mSearchView.setQueryHint("Search title, description and email");
-    private void setSearchViewResources() {
+    public void setSearchViewResources() {
 
-        EditText searchEditText = (EditText) searchView.findViewById(android.support.v7.appcompat.R.id.search_src_text);
+        EditText searchEditText = (EditText) searchView.findViewById(R.id.search_src_text);
 
         //This way of setting hint text not only sets hint text but also removes the default magnifier icon from the query field
         searchEditText.setHint("Search by ID, Title or Description");
@@ -70,7 +70,7 @@ public class SearviewActivity extends AppCompatActivity implements SearchView.On
      */
     private void searchListeners() {
         final SearchSuggestionsAdapter searchSuggestionsAdapter = new SearchSuggestionsAdapter(this);
-        ImageView imageView = (ImageView) searchView.findViewById(android.support.v7.appcompat.R.id.search_close_btn);
+        ImageView imageView = (ImageView) searchView.findViewById(R.id.search_close_btn);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

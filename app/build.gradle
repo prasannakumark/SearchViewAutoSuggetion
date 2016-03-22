@@ -1,11 +1,14 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+group = 'com.github.prasannakumark'
 
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "autosuggetion.searveiew.com.searchviewautosuggetion"
+        //applicationId "autosuggetion.searveiew.com.searchviewautosuggetion"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
